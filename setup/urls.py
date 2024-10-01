@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from appProva.views import mostrarHtml
+from appProva.views import mostrarHtml, home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', mostrarHtml)
+    path('', mostrarHtml),
+    path('home', home)
 ]
